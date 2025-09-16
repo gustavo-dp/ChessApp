@@ -1,4 +1,5 @@
 package com.chessApp.application.dto.response;
 
-public class GameResponseDTO {
+public class MovesRequestDTO {
+
 }

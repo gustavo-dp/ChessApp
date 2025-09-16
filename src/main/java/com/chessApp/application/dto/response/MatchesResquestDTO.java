@@ -1,6 +1,6 @@
 package com.chessApp.application.dto.response;
 
-public class MatchesResponseDTO {
+public class MatchesResquestDTO {
     private Long id;
     private List<Game>
 }
