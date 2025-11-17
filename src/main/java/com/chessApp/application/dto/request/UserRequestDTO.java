@@ -1,13 +1,9 @@
 package com.chessApp.application.dto.request;
 
-import lombok.*;
+import lombok.Data;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-public class UserRequestDTO {
-    private String username;
+@Data
+public class UserRequestDTO{
+    private String name;
     private String email;
-    private String elo;
 }
