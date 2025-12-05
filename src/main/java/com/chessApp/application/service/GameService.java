@@ -1,5 +1,7 @@
 package com.chessApp.application.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.chessApp.application.dto.request.CreateGameDTO;
@@ -16,6 +18,10 @@ public class GameService {
     private final GameRepository gameRepository;
     private final UserRepository userRepository;
     private final PgnService pgnService;
+    
+    public List<Game> getAll(){
+       return gameRepository.findAll();
+    }
 
     @Transactional
     public Game createByPgn(CreateGameDTO request){
@@ -26,5 +32,8 @@ public class GameService {
 
         return gameRepository.save(newGame);
     }
+
+
+
     
 }

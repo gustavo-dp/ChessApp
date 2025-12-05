@@ -22,16 +22,6 @@ import lombok.RequiredArgsConstructor;
 public class UserController {
         private final UserService userService;
         
-        @PostMapping("/create")
-        public ResponseEntity<User> createUser(@RequestBody UserRequestDTO request){
-            try{
-                User user = userService.createUser(request);
-                return ResponseEntity.ok(user);
-            }catch(Exception e){
-                e.printStackTrace();
-                return ResponseEntity.badRequest().build();
-            }
-        }
-
+        
     
 }
